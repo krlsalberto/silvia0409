@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Técnico em Informática para Internet - ETEC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Cores oficiais do Centro Paula Souza - Azul e branco */
+        .header-top {
+            background-color: #004a80;
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header {
+            background: linear-gradient(to bottom, #0063a6, #004a80);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo i {
+            font-size: 40px;
+            color: #0063a6;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #0063a6;
+        }
+        
+        h2 {
+            color: #004a80;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 10px;
+            color: #0063a6;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .course-list {
+            list-style: none;
+        }
+        
+        .course-list li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: #f0f6ff;
+            border-radius: 6px;
+            border-left: 4px solid #0063a6;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .course-list li:hover {
+            background: #e0eeff;
+            transform: translateX(5px);
+        }
+        
+        .course-list i {
+            margin-right: 10px;
+            color: #004a80;
+            width: 25px;
+        }
+        
+        footer {
+            background: #004a80;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-bottom {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #0063a6;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #004a80;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .footer-section {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container header-top-content">
+            <div>Centro Paula Souza</div>
+            <div>ETEC - Escola Técnica Estadual</div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div>
+                    <h1>Informática para Internet</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container main-content">
+        <div class="card">
+            <h2><i class="fas fa-info-circle"></i> Sobre o Curso</h2>
+            <p>O curso técnico em Informática para Internet integrado ao ensino médio tem duração de 3 anos e combina as disciplinas regulares do ensino médio com formação técnica em desenvolvimento web, preparando os alunos para atuarem no mercado de tecnologia.</p>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-graduation-cap"></i> O que você vai estudar</h2>
+            <ul class="course-list">
+                <li><i class="fas fa-code"></i> Programação Web (HTML, CSS, JavaScript)</li>
+                <li><i class="fas fa-paint-brush"></i> Design de Interfaces e UX</li>
+                <li><i class="fas fa-database"></i> Banco de Dados e Back-end</li>
+                <li><i class="fas fa-mobile-alt"></i> Desenvolvimento Mobile</li>
+                <li><i class="fas fa-server"></i> Redes e Infraestrutura</li>
+                <li><i class="fas fa-project-diagram"></i> Projetos Integradores</li>
+            </ul>
+        </div>
+
+    
+    <footer>
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
